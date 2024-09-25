@@ -1,0 +1,1392 @@
+<!-- saved from url=(0075)http://logicprogramming.stanford.edu/assignments/programsheets/starter.html -->
+<html><!--=======================================================================-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Academic Program Sheet</title>
+        <script type="text/javascript" src="http://epilog.stanford.edu/javascript/epilog.js"></script>
+        <script type="text/javascript" src="./worksheet.js"></script>
+        <style>
+          table {
+              width: 100%;
+              border-collapse: collapse;
+          }
+          table, th, td {
+              border: 1px solid black;
+          }
+          th, td {
+              padding: 10px;
+              text-align: left;
+          }
+          th {
+              background-color: #f2f2f2;
+          }
+          .total {
+              font-weight: bold;
+              background-color: #e6e6e6;
+          }
+
+          .sticky {
+        position: fixed;
+        background-color: #f1f1f1;
+        z-index: 999;
+      }
+      </style>
+      
+    </head>
+  
+    <!--=======================================================================-->
+  
+    <body style="background-color:#990000" onload="initialize()">
+    <!--=========================================================================-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        window.onscroll = function() {stickDiv()};
+        var row = document.getElementById("totalUnits_final");
+        var science_row = document.getElementById("science_title");
+
+        function stickDiv() {
+          var sticky = row.offsetTop + row.offsetHeight;
+          var science_sticky = science_row.offsetHeight + science_row.offsetTop - 75; 
+          if (window.pageYOffset >= sticky + science_sticky) {
+            row.classList.add("sticky");
+            row.style.top = 0;
+            row.style.left = row.offsetLeft + "px";
+            row.style.width = row.offsetWidth + "px";
+          } else {
+            row.classList.remove("sticky");
+            row.style.top = "";
+            row.style.left = "";
+            row.style.width = "";
+          }
+        }
+      });
+      </script>
+    <center>
+    <table width="720" bgcolor="#ffffff">
+        <tbody><tr>
+        <td>
+  
+    <br>
+    <center>
+    <h2 style="margin-top:0px;padding-top:0px;font-size:1.2em">
+            STANFORD UNIVERSITY<br>
+            Computer Science Department<br>
+            Program Sheet<br>
+    </h2>
+    </center>
+<!-- Math Requirements -->
+  
+<fieldset>
+  <center>
+      <h2>Math Requirements</h2>
+      <h3>Minimum of 26 Units Required</h3>
+      <table>
+          <thead>
+            <tr id="totalUnits_final" >
+                <td colspan="2" id ="totUnit" style="color:red">108 Units Needed</td>
+                <td>Total Units So Far:</td>
+                <td id="total_units"></td>
+            </tr>
+              <tr>
+                  <th>Course</th>
+                  <th>Class Name</th>
+                  <th>Quarter Taken</th>
+                  <th>Units</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Math 19</td>
+                  <td>Calculus I</td>
+                  <td>
+                    <div class="dropdown">
+                        <select id="math19" type="select-one" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                        </select>
+                    </div>
+                  </td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>Math 20</td>
+                  <td>Calculus II</td>
+                  <td>
+                    <div class="dropdown">
+                        <select id="math20" type="select-one" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                        </select>
+                    </div>
+                  </td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>Math 21</td>
+                  <td>Calculus III</td>
+                  <td>
+                    <div class="dropdown">
+                        <select id="math21" type="select-one" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                        </select>
+                    </div>
+                  </td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td>CS 103</td>
+                  <td>Mathematical Foundations of Computing</td>
+                  <td>
+                    <div class="dropdown">
+                        <select id="cs103" type ="select-one" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                        </select>
+                    </div>
+                  </td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>CS 109</td>
+                  <td>Introduction to Probability for Computer Scientists</td>
+                  <td>
+                    <div class="dropdown">
+                        <select id="cs109" type="select-one" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                        </select>
+                    </div>
+                  </td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td colspan="4">Electives (Minimum of 2 Courses)</td>
+              </tr>
+              <tr>
+                  <td>
+                    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                        <label><input type="checkbox" id="math51" onchange="handle(this)">Math 51</label>
+                        <label><input type="checkbox" id="math52" onchange="handle(this)">Math 52</label>
+                        <label><input type="checkbox" id="math53" onchange="handle(this)">Math 53</label>
+                        <label><input type="checkbox" id="math104" onchange="handle(this)">Math 104</label>
+                        <label><input type="checkbox" id="math107" onchange="handle(this)">Math 107</label>
+                        <label><input type="checkbox" id="math108" onchange="handle(this)">Math 108</label>
+                        <label><input type="checkbox" id="math109" onchange="handle(this)">Math 109</label>
+                        <label><input type="checkbox" id="math110" onchange="handle(this)">Math 110</label>
+                        <label><input type="checkbox" id="math113" onchange="handle(this)">Math 113</label>
+                        <label><input type="checkbox" id="cme100" onchange="handle(this)">CME 100</label>
+                        <label><input type="checkbox" id="cme102" onchange="handle(this)">CME 102</label>
+                        <label><input type="checkbox" id="engr108" onchange="handle(this)">ENGR 108</label>
+                        <label><input type="checkbox" id="cme104" onchange="handle(this)">CME 104</label>
+                        <label><input type="checkbox" id="cs205l" onchange="handle(this)">CS 205L</label>
+                        <label><input type="checkbox" id="cs1057" onchange="handle(this)">CS 157</label>
+                        <label><input type="checkbox" id="phi151" onchange="handle(this)">PHIL 151</label>
+                    </div>
+                  </td>
+              </tr>
+          </tbody>
+          <tfoot>
+            <tr class="total">
+                <td colspan="3">Total Math Units</td>
+                <td id="totmathunits"></td>
+            </tr>
+        </tfoot>
+      </table>
+  </center>
+</fieldset>
+
+<!-- Unfulfilled Requirements -->
+
+<fieldset>
+  <table width="100%">
+    <tbody>
+    <tr>
+      <td width="25%">
+          Requirements:
+        <br>
+        <div id="math19-req" style="color:red">&nbsp;&nbsp;Math 19 required.</div>
+        <div id="math20-req" style="color:red">&nbsp;&nbsp;Math 20 required.</div>
+        <div id="math21-req" style="color:red">&nbsp;&nbsp;Math 21 required.</div>
+        <div id="cs103-req" style="color:red">&nbsp;&nbsp;CS 103 required.</div>
+        <div id="cs109-req" style="color:red">&nbsp;&nbsp;CS 109 required.</div>
+        <div id="math-unit-req" style="color:red">&nbsp;&nbsp; 26 units minimum.</div>
+      </td>
+    </tr>
+   </tbody>
+  </table>
+</fieldset>
+
+<!-- Science Requirements -->
+
+<fieldset>
+  <center>
+      <h2 id="science_title">Science Requirements</h2>
+      <h3>Minimum of 11 Units Required</h3>
+      <table>
+          <thead>
+              <tr>
+                  <th>Course</th>
+                  <th>Class Name</th>
+                  <th>Quarter Taken</th>
+                  <th>Units</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Physics 21/41/61</td>
+                  <td>Mechanics</td>
+                  <td>
+                    <div class="dropdown">
+                        <select id="physics21" type="select-one" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                        </select>
+                    </div>
+                  </td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td>Physics 23/43/63/81</td>
+                  <td>Electricity and Magnetism</td>
+                  <td>
+                    <div class="dropdown">
+                        <select id="physics23" type="select-one" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                        </select>
+                    </div>
+                  </td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td colspan="4">Electives (Minimum of 3 Units)</td>
+              </tr>
+              <tr>
+                  <td>
+                    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                        <label><input type="checkbox" id="psych30" onchange="handle(this)">PSYCH 30</label>
+                        <label><input type="checkbox" id="apchem" onchange="handle(this)">AP CHEM</label>
+                        <label><input type="checkbox" id="bio81" onchange="handle(this)">BIO 81</label>
+                        <label><input type="checkbox" id="bio82" onchange="handle(this)">BIO 82</label>
+                        <label><input type="checkbox" id="bio83" onchange="handle(this)">BIO 83</label>
+                        <label><input type="checkbox" id="bio84" onchange="handle(this)">BIO 84</label>
+                        <label><input type="checkbox" id="bio85" onchange="handle(this)">BIO 85</label>
+                        <label><input type="checkbox" id="bio86" onchange="handle(this)">BIO 86</label>
+                        <label><input type="checkbox" id="bio150" onchange="handle(this)">BIO 150</label>
+                        <label><input type="checkbox" id="cee63" onchange="handle(this)">CEE 63</label>
+                        <label><input type="checkbox" id="cee64" onchange="handle(this)">CEE 64</label>
+                        <label><input type="checkbox" id="cee70" onchange="handle(this)">CEE 70</label>
+                        <label><input type="checkbox" id="chem31a" onchange="handle(this)">CHEM 31A</label>
+                        <label><input type="checkbox" id="chem31b" onchange="handle(this)">CHEM 31B</label>
+                        <label><input type="checkbox" id="chem31m" onchange="handle(this)">CHEM 31M</label>
+                        <label><input type="checkbox" id="chem33" onchange="handle(this)">CHEM 33</label>
+                        <label><input type="checkbox" id="chem121" onchange="handle(this)">CHEM 121</label>
+                        <label><input type="checkbox" id="chem123" onchange="handle(this)">CHEM 123</label>
+                        <label><input type="checkbox" id="earthsys2" onchange="handle(this)">EARTHSYS 2</label>
+                        <label><input type="checkbox" id="earthsys10" onchange="handle(this)">EARTHSYS 10</label>
+                        <label><input type="checkbox" id="earthsys11" onchange="handle(this)">EARTHSYS 11</label>
+                        <label><input type="checkbox" id="physics71" onchange="handle(this)">PHYSICS 71</label>
+                    </div>
+                  </td>
+              </tr>
+          </tbody>
+          <tfoot>
+            <tr class="total">
+                <td colspan="3">Total Science Units</td>
+                <td id="totscienceunits"></td>
+            </tr>
+        </tfoot>
+      </table>
+  </center>
+</fieldset>
+
+<!-- Unfulfilled Requirements -->
+
+<fieldset>
+    <table width="100%">
+      <tbody>
+      <tr>
+        <td width="30%">
+          Requirements:
+          <br>
+          <div id="science-req-1" style="color:red">&nbsp;&nbsp;Physics 21/41/61 required.</div>
+          <div id="science-req-2" style="color:red">&nbsp;&nbsp;Physics 23/43/63/81 required.</div>
+          <div id="science-unit-req" style="color:red">&nbsp;&nbsp;11 units minimum.</div>
+        </td>
+      </tr>
+     </tbody>
+    </table>
+</fieldset>
+
+<!-- Technology in Society requirements -->
+
+<fieldset>
+  <center>
+      <h2>Technology in Society Requirement</h2>
+      <h3>Select One Class</h3>
+      <table>
+          <thead>
+              <tr>
+                  <th>Courses</th>
+                  <th colspan="3">Units</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                        <label><input type="checkbox" id="aa256" onchange="handle(this)">AA 256</label>
+                        <label><input type="checkbox" id="anthro132c" onchange="handle(this)">ANTHRO 132C (CSRE 132C)</label>
+                        <label><input type="checkbox" id="anthro132d" onchange="handle(this)">ANTHRO 132D (CSRE 132D)</label>
+                        <label><input type="checkbox" id="bioe131" onchange="handle(this)">BIOE 131</label>
+                        <label><input type="checkbox" id="bioe177" onchange="handle(this)">BIOE 177</label>
+                        <label><input type="checkbox" id="cee102a" onchange="handle(this)">CEE 102A</label>
+                        <label><input type="checkbox" id="cee145e" onchange="handle(this)">CEE 145E</label>
+                        <label><input type="checkbox" id="cee177s" onchange="handle(this)">CEE 177S</label>
+                        <label><input type="checkbox" id="cee177x" onchange="handle(this)">CEE 177X</label>
+                        <label><input type="checkbox" id="classics168" onchange="handle(this)">CLASSICS 168 (ARCHLGY 168)</label>
+                        <label><input type="checkbox" id="comm120w" onchange="handle(this)">COMM 120W</label>
+                        <label><input type="checkbox" id="comm166" onchange="handle(this)">COMM 166</label>
+                        <label><input type="checkbox" id="cs125" onchange="handle(this)">CS 125</label>
+                        <label><input type="checkbox" id="cs152" onchange="handle(this)">CS 152</label>
+                        <label><input type="checkbox" id="cs181" onchange="handle(this)">CS 181</label>
+                        <label><input type="checkbox" id="cs181w" onchange="handle(this)">CS 181W</label>
+                        <label><input type="checkbox" id="cs182" onchange="handle(this)">CS 182</label>
+                        <label><input type="checkbox" id="cs182w" onchange="handle(this)">CS 182W</label>
+                        <label><input type="checkbox" id="cs184" onchange="handle(this)">CS 184</label>
+                        <label><input type="checkbox" id="cs206" onchange="handle(this)">CS 206</label>
+                        <label><input type="checkbox" id="cs256" onchange="handle(this)">CS 256</label>
+                        <label><input type="checkbox" id="cs278" onchange="handle(this)">CS 278</label>
+                        <label><input type="checkbox" id="datasci154" onchange="handle(this)">DATASCI 154</label>
+                        <label><input type="checkbox" id="earthsys125" onchange="handle(this)">EARTHSYS 125</label>
+                    </div>
+                  </td>
+              </tr>
+          </tbody>
+          <tfoot>
+              <tr class="total">
+                  <td colspan="3">Total TiS Units</td>
+                  <td id="tottisunits"></td>
+              </tr>
+          </tfoot>
+      </table>
+  </center>
+</fieldset>
+
+<!-- Unfulfilled Requirements -->
+
+<fieldset>
+    <table width="100%">
+      <tbody>
+      <tr>
+        <td width="30%">
+          Requirements:
+          <br>
+          <div id="tis-unit-req" style="color:red">&nbsp;&nbsp;One TiS course required.</div>
+        </td>
+      </tr>
+     </tbody>
+    </table>
+</fieldset>
+
+<!-- Engineering Fundamentals Requirements -->
+
+<fieldset>
+  <center>
+      <h2>Engineering Fundamentals Requirement</h2>
+      <h3>Minimum of 10 Units Required</h3>
+      <table>
+          <thead>
+              <tr>
+                  <th>Course</th>
+                  <th>Class Name</th>
+                  <th>Quarter Taken</th>
+                  <th>Units</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>CS106B</td> 
+                  <td>Programming Abstractions</td>
+                  <td>
+                    <div class="dropdown">
+                        <select id="cs106b" type="select-one" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                        </select>
+                    </div>
+                  </td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>
+                    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                        <label><input type="checkbox" id="engr40m" onchange="handle(this)">ENGR 40M</label>
+                        <label><input type="checkbox" id="engr76" onchange="handle(this)">ENGR 76</label>
+                    </div>
+                  </td>
+              </tr>
+          </tbody>
+          <tfoot>
+              <tr class="total">
+                  <td colspan="3">Total Engineering Fundamentals Units</td>
+                  <td id="totengfundunits"></td>
+              </tr>
+          </tfoot>
+      </table>
+  </center>
+</fieldset>
+
+<!-- Unfulfilled Requirements -->
+
+<fieldset>
+    <table width="100%">
+      <tbody>
+      <tr>
+        <td width="30%">
+          Requirements:
+          <br>
+          <div id="engineering-req-1" style="color:red">&nbsp;&nbsp;106B required.</div>
+          <div id="engineering-unit-req" style="color:red">&nbsp;&nbsp;10 units minimum.</div>
+        </td>
+      </tr>
+     </tbody>
+    </table>
+</fieldset>
+
+<!-- Core Requirements -->
+
+<fieldset>
+  <center>
+      <h2>Core Requirement</h2>
+      <h3>Minimum of 15 Units Required</h3>
+      <table>
+          <thead>
+              <tr>
+                  <th>Course</th>
+                  <th>Class Name</th>
+                  <th>Quarter Taken</th>
+                  <th>Units</th>
+              </tr>
+          </thead>
+          <tbody>
+              
+              <tr>
+                  <td>CS 111</td>
+                  <td>Operating Systems Principles</td>
+                  <td>
+                      <div class="dropdown">
+                          <select id="cs111" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                          </select>
+                      </div>
+                  </td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>CS 161</td>
+                  <td>Design and Analysis of Algorithms</td>
+                  <td>
+                      <div class="dropdown">
+                          <select id="cs161" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                          </select>
+                      </div>
+                  </td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                <td>
+                    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-left: 10px; padding-right: 10px;">
+                        <label><input type="checkbox" id="cs107" onchange="handle(this)">CS 107</label>
+                        <label><input type="checkbox" id="cs107e" onchange="handle(this)">CS 107E</label>
+                    </div>
+                </td>
+            </tr>
+          </tbody>
+          <tfoot>
+              <tr class="total">
+                  <td colspan="3">Total Core Units</td>
+                  <td id="totcoreunits"></td>
+              </tr>
+          </tfoot>
+      </table>
+  </center>
+</fieldset>
+
+<!-- Unfulfilled Requirements -->
+
+<fieldset>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td width="30%">
+                    Requirements:
+                    <br>
+                    <div id="core-req-1" style="color:red">&nbsp;&nbsp;CS 111 required.</div>
+                    <div id="core-req-2" style="color:red">&nbsp;&nbsp;CS 161 required.</div>
+                    <div id="core-unit-req" style="color:red">&nbsp;&nbsp;15 units minimum.</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+
+<!-- Depth Requirements -->
+
+<fieldset>
+  <center>
+      <h2>Depth: AI Track and Electives Requirement</h2>
+      <h3>Minimum of 25 Units and Seven Courses Required</h3>
+      <table>
+          <thead>
+              <tr>
+                  <th>Course</th>
+                  <th>Class Name</th>
+                  <th>Quarter Taken</th>
+                  <th>Units</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>CS 221</td>
+                  <td>AI: Principles and Techniques (Track Requirement A)</td>
+                  <td>
+                      <div class="dropdown">
+                          <select id="cs221" onchange="handle(this)">
+                            <option value="false">None</option>
+                            <option value="frosh-autumn">Frosh Autumn</option>
+                            <option value="frosh-winter">Frosh Winter</option>
+                            <option value="frosh-spring">Frosh Spring</option>
+                            <option value="frosh-summer">Frosh Summer</option>
+                            <option value="sophmore-autumn">Sophomore Autumn</option>
+                            <option value="sophmore-winter">Sophomore Winter</option>
+                            <option value="sophmore-spring">Sophomore Spring</option>
+                            <option value="sophmore-summer">Sophomore Summer</option>
+                            <option value="junior-autumn">Junior Autumn</option>
+                            <option value="junior-winter">Junior Winter</option>
+                            <option value="junior-spring">Junior Spring</option>
+                            <option value="junior-summer">Junior Summer</option>
+                            <option value="senior-autumn">Senior Autumn</option>
+                            <option value="senior-winter">Senior Winter</option>
+                            <option value="senior-spring">Senior Spring</option>
+                            <option value="senior-summer">Senior Summer</option>
+                          </select>
+                      </div>
+                  </td>
+                  <td>5</td>
+              </tr>
+             <tr>
+                <td> Track B Classes
+                    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                        <label><input type="checkbox" id="cs224r" onchange="handle(this)">CS 224R</label>
+                        <label><input type="checkbox" id="cs228" onchange="handle(this)">CS 228</label>
+                        <label><input type="checkbox" id="cs229" onchange="handle(this)">CS 229</label>
+                        <label><input type="checkbox" id="cs229m" onchange="handle(this)">CS 229M</label>
+                        <label><input type="checkbox" id="cs229t" onchange="handle(this)">CS 229T</label>
+                        <label><input type="checkbox" id="cs234" onchange="handle(this)">CS 234</label>
+                        <label><input type="checkbox" id="cs238" onchange="handle(this)">CS 238</label>
+                        <label><input type="checkbox" id="cs124" onchange="handle(this)">CS 124</label>
+                        <label><input type="checkbox" id="cs224n" onchange="handle(this)">CS 224N</label>
+                        <label><input type="checkbox" id="cs224s" onchange="handle(this)">CS 224S</label>
+                        <label><input type="checkbox" id="cs224u" onchange="handle(this)">CS 224U</label>
+                        <label><input type="checkbox" id="cs224v" onchange="handle(this)">CS 224V</label>
+                        <label><input type="checkbox" id="cs131" onchange="handle(this)">CS 131</label>
+                        <label><input type="checkbox" id="cs231a" onchange="handle(this)">CS 231A</label>
+                        <label><input type="checkbox" id="cs231n" onchange="handle(this)">CS 231N</label>
+                        <label><input type="checkbox" id="cs123" onchange="handle(this)">CS 123</label>
+                        <label><input type="checkbox" id="cs223a" onchange="handle(this)">CS 223A</label>
+                        <label><input type="checkbox" id="cs237a" onchange="handle(this)">CS 237A</label>
+                      </div>
+                </td>
+                <td> Track C Classes
+                   <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                        <label><input type="checkbox" id="cs157" onchange="handle(this)">CS 157</label>
+                        <label><input type="checkbox" id="cs205l" onchange="handle(this)">CS 205L</label>
+                        <label><input type="checkbox" id="cs230" onchange="handle(this)">CS 230</label>
+                        <label><input type="checkbox" id="cs236" onchange="handle(this)">CS 236</label>
+                        <label><input type="checkbox" id="cs257" onchange="handle(this)">CS 257</label>
+                        <label><input type="checkbox" id="stats315a" onchange="handle(this)">STATS 315A</label>
+                        <label><input type="checkbox" id="stats315b" onchange="handle(this)">STATS 315B</label>
+                        <label><input type="checkbox" id="cs235" onchange="handle(this)">CS 235</label>
+                        <label><input type="checkbox" id="cs279" onchange="handle(this)">CS 279</label>
+                        <label><input type="checkbox" id="cs371" onchange="handle(this)">CS 371</label>
+                        <label><input type="checkbox" id="cs224w" onchange="handle(this)">CS 224W</label>
+                        <label><input type="checkbox" id="cs276" onchange="handle(this)">CS 276</label>
+                        <label><input type="checkbox" id="cs256" onchange="handle(this)">CS 256</label>
+                        <label><input type="checkbox" id="cs151" onchange="handle(this)">CS 151</label>
+                        <label><input type="checkbox" id="cs227b" onchange="handle(this)">CS 227B</label>
+                        <label><input type="checkbox" id="cs225a" onchange="handle(this)">CS 225A</label>
+                        <label><input type="checkbox" id="cs327a" onchange="handle(this)">CS 327A</label>
+                        <label><input type="checkbox" id="cs329" onchange="handle(this)">CS 329</label>
+                        <label><input type="checkbox" id="engr205" onchange="handle(this)">ENGR 205</label>
+                        <label><input type="checkbox" id="mse251" onchange="handle(this)">MSE 251</label>
+                        <label><input type="checkbox" id="mse351" onchange="handle(this)">MSE 351</label>
+                   
+                </td>
+                <td>
+                    Some Electives
+                    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                        <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                            <label><input type="checkbox" id="cs325b" onchange="handle(this)">CS 325B</label>
+                            <label><input type="checkbox" id="cs326" onchange="handle(this)">CS 326</label>
+                            <label><input type="checkbox" id="cs329d" onchange="handle(this)">CS 329D</label>
+                            <label><input type="checkbox" id="cs330" onchange="handle(this)">CS 330</label>
+                            <label><input type="checkbox" id="cs338" onchange="handle(this)">CS 338</label>
+                            <label><input type="checkbox" id="cs428" onchange="handle(this)">CS 428</label>
+                            <label><input type="checkbox" id="ee263" onchange="handle(this)">EE 263</label>
+                            <label><input type="checkbox" id="ee278" onchange="handle(this)">EE 278</label>
+                            <label><input type="checkbox" id="ee364a" onchange="handle(this)">EE 364A</label>
+                            <label><input type="checkbox" id="ee364b" onchange="handle(this)">EE 364B</label>
+                            <label><input type="checkbox" id="mse252" onchange="handle(this)">MSE 252</label>
+                            <label><input type="checkbox" id="mse352" onchange="handle(this)">MSE 352</label>
+                            <label><input type="checkbox" id="mse355" onchange="handle(this)">MSE 355</label>
+                            <label><input type="checkbox" id="phil152" onchange="handle(this)">PHIL 152</label>
+                            <label><input type="checkbox" id="psych204a" onchange="handle(this)">PSYCH 204A</label>
+                            <label><input type="checkbox" id="psych204b" onchange="handle(this)">PSYCH 204B</label>
+                            <label><input type="checkbox" id="psych209" onchange="handle(this)">PSYCH 209</label>
+                            <label><input type="checkbox" id="stats200" onchange="handle(this)">STATS 200</label>
+                            <label><input type="checkbox" id="stats202" onchange="handle(this)">STATS 202</label>
+                            <label><input type="checkbox" id="stats203" onchange="handle(this)">STATS 203</label>
+                            <label><input type="checkbox" id="stats205" onchange="handle(this)">STATS 205</label>
+                            <label><input type="checkbox" id="stats271" onchange="handle(this)">STATS 271</label>
+        </div> 
+                </td>
+            </tr>
+          </tbody>
+          <tbody>
+            
+          </tbody>
+          <tfoot>
+              <tr class="total">
+                  <td colspan="3">Total Depth Units</td>
+                  <td id="totdepthunits"></td>
+              </tr>
+          </tfoot>
+      </table>
+  </center>
+</fieldset>
+
+<!-- Unfulfilled Requirements -->
+
+<fieldset>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td width="30%">
+                    Requirements:
+                    <br>
+                    <div id="depth-req-1" style="color:red">&nbsp;&nbsp;CS 221 required.</div>
+                    <div id="depth-unit-req" style="color:red">&nbsp;&nbsp;25 units minimum.</div>
+                    <div id="depth-classes-req" style="color:red">&nbsp;&nbsp;7 courses minimum.</div>
+                    <div id="class-b-req" style="color:red">&nbsp;&nbsp;2 Track B classes required.</div>
+                    <div id="class-c-req" style="color:red">&nbsp;&nbsp;1 Track C class or 1 Track B class required.</div>
+                    <div id="electives-req" style="color:red">&nbsp;&nbsp; 3 additional classes from Track C, B, or general CS electives.</div>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+  
+<dataset id="lambda" style="font-family:courier;display:none" rows="20" cols="20">
+    <!-- MATH-->
+    class(math19, false, 3)
+    class(math20, false, 3)  
+    class(math21, false, 4)
+    class(cs103,  false, 5)
+    class(cs109, false, 5)
+
+    value(math19, false)
+    value(math20, false)
+    value(math21, false)
+    value(cs103,  false)
+    value(cs109, false)
+
+    math_class(math19)
+    math_class(math20)
+    math_class(math21)
+    math_class(cs103)
+    math_class(cs109)
+
+    <!-- Math Electives -->
+    class(math51, false, 5)
+    class(math52, false, 5)
+    class(math53, false, 5)
+    class(math104, false, 4)
+    class(math107, false, 4)
+    class(math108, false, 5)
+    class(math109, false, 5)
+    class(math110, false, 5)
+    class(math113, false, 5)
+    class(cme100, false, 5)
+    class(cme102, false, 5)
+    class(engr108, false, 5)
+    class(cme104, false, 5)
+    class(cs205l, false, 3)
+    class(cs1057, false, 3)
+    class(phi151, false, 4)
+
+    math_class(math51)
+    math_class(math52)
+    math_class(math53)
+
+    math_class(math104)
+    math_class(math107)
+    math_class(math108)
+    math_class(math109)
+    math_class(math110)
+    math_class(math113)
+    math_class(cme100)
+    math_class(cme102)
+    math_class(engr108)
+    math_class(cme104)
+    math_class(cs205l)
+    math_class(cs1057)
+    math_class(phi151)
+
+    <!-- Science -->
+    class(physics21, false, 4)
+    class(physics23, false, 4)
+
+    value(physics21, false)
+    value(physics23, false)
+
+    science_class(physics21)
+    science_class(physics23)
+
+    <!-- Science Electives -->
+    class(psych30, false, 3)
+    class(apchem, false, 5)
+    class(bio81, false, 5)
+    class(bio82, false, 5)
+    class(bio83, false, 5)
+    class(bio84, false, 5)
+    class(bio85, false, 5)
+    class(bio86, false, 5)
+    class(bio150, false, 5)
+    class(cee63, false, 3)
+    class(cee64, false, 3)
+    class(cee70, false, 3)
+    class(chem31a, false, 5)
+    class(chem31b, false, 5)
+    class(chem31m, false, 5)
+    class(chem33, false, 5)
+    class(chem121, false, 5)
+    class(chem123, false, 3)
+    class(earthsys2, false, 2)
+    class(earthsys10, false, 4)
+    class(earthsys11, false, 5)
+    class(physics71, false, 4)
+
+    science_class(psych30)
+    science_class(apchem)
+    science_class(bio81)
+    science_class(bio82)
+    science_class(bio83)
+    science_class(bio84)
+    science_class(bio85)
+    science_class(bio86)
+    science_class(bio150)
+    science_class(cee63)
+    science_class(cee64)
+    science_class(cee70)
+    science_class(chem31a)
+    science_class(chem31b)
+    science_class(chem31m)
+    science_class(chem33)
+    science_class(chem121)
+    science_class(chem123)
+    science_class(earthsys2)
+    science_class(earthsys10)
+    science_class(earthsys11)
+    science_class(physics71)
+
+    <!-- Technology in Society -->
+    class(aa256, false, 3)
+    class(anthro132c, false, 5)
+    class(anthro132d, false, 5)
+    class(bioe131, false, 3)
+    class(bioe177, false, 3)
+    class(cee102a, false, 3)
+    class(cee145e, false, 3)
+    class(cee177s, false, 4)
+    class(cee177x, false, 4)
+    class(classics168, false, 4)
+    class(comm120w, false, 5)
+    class(comm166, false, 5)
+    class(cs125, false, 3)
+    class(cs152, false, 3)
+    class(cs181, false, 4)
+    class(cs181w, false, 4)
+    class(cs182, false, 4)
+    class(cs182w, false, 4)
+    class(cs184, false, 4)
+    class(cs206, false, 3)
+    class(cs256, false, 3)
+    class(cs278, false, 4)
+    class(datasci154, false, 5)
+    class(earthsys125, false, 4)
+
+    value(aa256, false)
+    value(anthro132c, false)
+    value(anthro132d, false)
+    value(bioe131, false)
+    value(bioe177, false)
+    value(cee102a, false)
+    value(cee145e, false)
+    value(cee177s, false)
+    value(cee177x, false)
+    value(classics168, false)
+    value(comm120w, false)
+    value(comm166, false)
+    value(cs125, false)
+    value(cs152, false)
+    value(cs181, false)
+    value(cs181w, false)
+    value(cs182, false)
+    value(cs182w, false)
+    value(cs184, false)
+    value(cs206, false)
+
+    value(cs278, false)
+    value(datasci154, false)
+    value(earthsys125, false)
+
+    tis_class(aa256)
+    tis_class(anthro132c)
+    tis_class(anthro132d)
+    tis_class(bioe131)
+    tis_class(bioe177)
+    tis_class(cee102a)
+    tis_class(cee145e)
+    tis_class(cee177s)
+    tis_class(cee177x)
+    tis_class(classics168)
+    tis_class(comm120w)
+    tis_class(comm166)
+    tis_class(cs125)
+    tis_class(cs152)
+    tis_class(cs181)
+    tis_class(cs181w)
+    tis_class(cs182)
+    tis_class(cs182w)
+    tis_class(cs184)
+    tis_class(cs206)
+
+    tis_class(cs256)
+    tis_class(cs278)
+    tis_class(datasci154)
+    tis_class(earthsys125)
+
+    <!-- Engineering Fundamentals -->
+    class(cs106b, false, 5)
+    class(engr40m, false, 5)
+    class(engr76, false, 5)
+
+    value(cs106b, false)
+    value(engr40m, false)
+    value(engr76, false)
+
+    engineering_class(cs106b)
+    engineering_class(engr40m)
+    engineering_class(engr76)
+
+    <!-- Core -->
+     class(cs111, false, 5)
+     class(cs161, false, 5)
+     class(cs107, false, 5)
+     class(cs107e, false, 5)
+
+    value(cs111, false)
+    value(cs161, false)
+    value(cs107, false)
+    value(cs107e, false)
+
+    core_class(cs111)
+    core_class(cs161)
+    core_class(cs107)
+    core_class(cs107e)
+
+    <!-- Depth -->
+
+    value(cs221)
+    class(cs221, false, 5)
+    depth_class(cs221)
+    depth_class(cs224r)
+    depth_class(cs228)
+    depth_class(cs229)
+    depth_class(cs229m)
+    depth_class(cs229t)
+    depth_class(cs234)
+    depth_class(cs238)
+    depth_class(cs124)
+    depth_class(cs224n)
+    depth_class(cs224s)
+    depth_class(cs224u)
+    depth_class(cs224v)
+    depth_class(cs131)
+    depth_class(cs231a)
+    depth_class(cs231n)
+    depth_class(cs123)
+    depth_class(cs223a)
+    depth_class(cs237a)
+
+
+    <!--Track B-->
+    depth_class(cs224r) value(cs224r, false) class(cs224r, false, 4) track_b(cs224r)
+    depth_class(cs228) value(cs228, false) class(cs228, false, 5) track_b(cs228)
+    depth_class(cs229) value(cs229, false) class(cs229, false, 3) track_b(cs229)
+    depth_class(cs229m) value(cs229m, false) class(cs229m, false, 4) track_b(cs229m)
+    depth_class(cs229t) value(cs229t, false) class(cs229t, false, 5) track_b(cs229t)
+    depth_class(cs234) value(cs234, false) class(cs234, false, 3)   track_b(cs234)
+    depth_class(cs238) value(cs238, false) class(cs238, false, 4) track_b(cs238)
+    depth_class(cs124) value(cs124, false) class(cs124, false, 5) track_b(cs124)
+    depth_class(cs224n) value(cs224n, false) class(cs224n, false, 3) track_b(cs224n)
+    depth_class(cs224s) value(cs224s, false) class(cs224s, false, 4) track_b(cs224s)
+    depth_class(cs224u) value(cs224u, false) class(cs224u, false, 5) track_b(cs224u)
+    depth_class(cs224v) value(cs224v, false) class(cs224v, false, 3) track_b(cs224v)
+    depth_class(cs131) value(cs131, false) class(cs131, false, 4) track_b(cs131)
+    depth_class(cs231a) value(cs231a, false) class(cs231a, false, 5) track_b(cs231a)
+    depth_class(cs231n) value(cs231n, false) class(cs231n, false, 3) track_b(cs231n)
+    depth_class(cs123) value(cs123, false) class(cs123, false, 4) track_b(cs123)
+    depth_class(cs223a) value(cs223a, false) class(cs223a, false, 5) track_b(cs223a)
+    depth_class(cs237a) value(cs237a, false) class(cs237a, false, 3) track_b(cs237a)
+    <!-- Track C -->
+    depth_class(cs157) 
+    value(cs157, false) 
+    class(cs157, false, 4)
+    track_c(cs157)
+    depth_class(cs205l) 
+    value(cs205l, false) 
+    class(cs205l, false, 5)
+    track_c(cs205l)
+    depth_class(cs230) 
+    value(cs230, false)
+     class(cs230, false, 3)
+    track_c(cs230)
+
+     depth_class(cs236) 
+     value(cs236, false) 
+     class(cs236, false, 5)
+        track_c(cs236)
+    depth_class(cs257) 
+    value(cs257, false)
+     class(cs257, false, 3)
+    track_c(cs257)
+     depth_class(stats315a) 
+     value(stats315a, false)
+     class(stats315a, false, 4)
+    track_c(stats315a)
+    depth_class(stats315b)
+     value(stats315b, false) 
+     class(stats315b, false, 5)
+    track_c(stats315b)
+    depth_class(cs235) 
+    value(cs235, false) 
+    class(cs235, false, 3)
+    track_c(cs235)
+    depth_class(cs279)
+     value(cs279, false) 
+     class(cs279, false, 4)
+    track_c(cs279)
+    depth_class(cs371) 
+    value(cs371, false)
+     class(cs371, false, 5)
+    track_c(cs371)
+    depth_class(cs224w) 
+    value(cs224w, false) 
+    class(cs224w, false, 3)
+    track_c(cs224w)
+    depth_class(cs276) 
+    value(cs276, false) 
+    class(cs276, false, 4)
+    track_c(cs276)
+    depth_class(cs256) 
+    value(cs256, false) 
+    class(cs256, false, 5)
+    track_c(cs256)
+     depth_class(cs151) 
+     value(cs151, false) 
+     class(cs151, false, 3)
+    track_c(cs151)
+    depth_class(cs227b) 
+    value(cs227b, false) 
+    class(cs227b, false, 4)
+    track_c(cs227b)
+    depth_class(cs225a)
+     value(cs225a, false) 
+     class(cs225a, false, 5)
+    track_c(cs225a)
+    depth_class(cs327a) 
+    value(cs327a, false) 
+    class(cs327a, false, 3)
+    track_c(cs327a)
+    
+    depth_class(cs329) 
+    value(cs329, false) 
+    class(cs329, false, 4)
+    track_c(cs329)
+    depth_class(engr205) 
+    value(engr205, false) 
+    class(engr205, false, 5)
+    track_c(engr205)
+    depth_class(mse251) 
+    value(mse251, false) 
+    class(mse251, false, 3)
+    track_c(mse251)
+    depth_class(mse351) 
+    value(mse351, false) 
+    class(mse351, false, 4)
+    track_c(mse351)
+        elective_class(cs325b) value(cs325b, false) class(cs325b, false, 3)
+        elective_class(cs326) value(cs326, false) class(cs326, false, 4)
+        elective_class(cs329d) value(cs329d, false) class(cs329d, false, 2)
+        elective_class(cs330) value(cs330, false) class(cs330, false, 5)
+        elective_class(cs338) value(cs338, false) class(cs338, false, 3)
+        elective_class(cs428) value(cs428, false) class(cs428, false, 4)
+        elective_class(ee263) value(ee263, false) class(ee263, false, 2)
+        elective_class(ee278) value(ee278, false) class(ee278, false, 5)
+        elective_class(ee364a) value(ee364a, false) class(ee364a, false, 3)
+        elective_class(ee364b) value(ee364b, false) class(ee364b, false, 4)
+        elective_class(mse252) value(mse252, false) class(mse252, false, 2)
+        elective_class(mse352) value(mse352, false) class(mse352, false, 5)
+        elective_class(mse355) value(mse355, false) class(mse355, false, 3)
+        elective_class(phil152) value(phil152, false) class(phil152, false, 4)
+        elective_class(psych204a) value(psych204a, false) class(psych204a, false, 2)
+        elective_class(psych204b) value(psych204b, false) class(psych204b, false, 5)
+        elective_class(psych209) value(psych209, false) class(psych209, false, 3)
+        elective_class(stats200) value(stats200, false) class(stats200, false, 4)
+        elective_class(stats202) value(stats202, false) class(stats202, false, 2)
+        elective_class(stats203) value(stats203, false) class(stats203, false, 5)
+        elective_class(stats205) value(stats205, false) class(stats205, false, 3)
+        elective_class(stats271) value(stats271, false) class(stats271, false, 4)
+
+    <!-- WiM Requirement-->
+    class(cs181w, false, 5) tis(cs181w)
+    class(cs182w, false, 4) tis(cs182w)
+    class(cs191w, false, 4) tis(cs191w)
+    class(cs194w, false, 4) tis(cs194w)
+    class(cs210b, false, 4) tis(cs210b)
+</dataset>
+  
+<ruleset id="library" style="font-family:courier;display:none" rows="20">
+     <!-- Handle Non-Blank Selections -->
+    select(X, S) :: distinct(S, false) & class(X, false, A) ==> 
+    ~class(X, false, A) & class(X, true, A) & 
+    value(X, S) & (value(X, Y) & distinct(S, Y) ==> ~value(X, Y))
+    
+    <!-- Handle Blank Selections -->
+    select(X, S) :: ~distinct(S, false) & class(X, _, A) ==> 
+    ~class(X, true, A) & class(X, false, A) &
+    value(X, S) & (value(X, Y) & distinct(S, Y) ==> ~value(X, Y))
+    
+    <!--Total Units-->
+    totalUnits(T) :- setofall([V, X],class(X, true, V), S) &
+    map(first, S, L) &
+    sum(L, T)
+    innerhtml(total_units, T) :- totalUnits(T)
+    first(X!Y, X)
+    req(totUnit) :- totalUnits(T) & min(T, 180, 180)
+
+    <!-- Math Requirements Ruleset-->
+    req(math-unit-req) :- mathunits(T) & min(T, 26, 26)
+    req(math19-req) :- class(math19, true, _)
+    req(math20-req) :- class(math20, true, _)
+    req(math21-req) :- class(math21, true, _)
+    req(cs103-req) :- class(cs103, true, _)
+    req(cs109-req) :- class(cs109, true, _)
+    
+    <!-- Math Unit Tracker-->
+    mathunits(T) :- 
+    setofall([V, X], (class(X, true, V) & math_class(X)), S) &
+    map(first, S, L) &
+    sum(L, T)
+    innerhtml(totmathunits, T) :- mathunits(T)
+
+    <!--Total Unit Requirements Style Updates-->
+    style(totUnit, color, red) :- ~ req(totUnit)
+    style(totUnit, color, black) :-  req(totUnit)
+    <!-- Math Requirements Style Updates -->
+    style(math-unit-req, color, red) :- ~req(math-unit-req)
+    style(math-unit-req, color, black) :- req(math-unit-req)
+    style(math19-req, color, red) :- ~req(math19-req)
+    style(math19-req, color, black) :- req(math19-req)
+    style(math20-req, color, red) :- ~req(math20-req)
+    style(math20-req, color, black) :- req(math20-req)
+    style(math21-req, color, red) :- ~req(math21-req)
+    style(math21-req, color, black) :- req(math21-req)
+    style(cs103-req, color, red) :- ~req(cs103-req)
+    style(cs103-req, color, black) :- req(cs103-req)
+    style(cs109-req, color, red) :- ~req(cs109-req)
+    style(cs109-req, color, black) :- req(cs109-req)
+
+    <!-- Science Requirements -->
+    req(science-unit-req) :- scienceunits(T) & min(T, 11, 11)
+    req(science-req-1) :- class(physics21, true, _)
+    req(science-req-2) :- class(physics23, true, _)
+
+    <!-- Science Unit Tracker -->
+    scienceunits(T) :- 
+    setofall([V, X], (class(X, true, V) & science_class(X)), S) &
+    map(first, S, L) &
+    sum(L, T)
+
+    innerhtml(totscienceunits, T) :- scienceunits(T).
+    <!--first(X!Y, X)-->
+
+    <!-- Science Requirements Style Updates -->
+    style(science-req-1, color, red) :- ~req(science-req-1)
+    style(science-req-1, color, black) :- req(science-req-1)
+    style(science-req-2, color, red) :- ~req(science-req-2)
+    style(science-req-2, color, black) :- req(science-req-2)
+    style(science-unit-req, color, red) :- ~req(science-unit-req)
+    style(science-unit-req, color, black) :- req(science-unit-req)
+
+    <!-- Technology in Society Requirements -->
+    req(tis-unit-req) :- tisunits(T) & min(T, 1, 1)
+
+    <!-- Technology in Society Unit Tracker -->
+    tisunits(T) :-
+    setofall([V, X], (class(X, true, V) & tis_class(X)), S) &
+    map(first, S, L) &
+    sum(L, T)
+
+    innerhtml(tottisunits, T) :- tisunits(T)
+    <!--first(X!Y, X)-->
+
+    <!-- Technology in Society Requirements Style Updates -->
+    style(tis-unit-req, color, red) :- ~req(tis-unit-req)
+    style(tis-unit-req, color, black) :- req(tis-unit-req)
+
+    <!-- Engineering Fundamentals Requirements -->
+    req(engineering-unit-req) :- engineeringunits(T) & min(T, 10, 10)
+    req(engineering-req-1) :- class(cs106b, true, _)
+
+    <!-- Engineering Fundamentals Unit Tracker -->
+    engineeringunits(T) :-
+    setofall([V, X], (class(X, true, V) & engineering_class(X)), S) &
+    map(first, S, L) &
+    sum(L, T)
+
+    innerhtml(totengfundunits, T) :- engineeringunits(T)
+    <!--first(X!Y, X)-->
+
+    <!-- Engineering Fundamentals Style Updates -->
+    style(engineering-req-1, color, red) :- ~req(engineering-req-1)
+    style(engineering-req-1, color, black) :- req(engineering-req-1)
+    style(engineering-unit-req, color, red) :- ~req(engineering-unit-req)
+    style(engineering-unit-req, color, black) :- req(engineering-unit-req)
+
+    <!-- Core Requirements -->
+    req(core-unit-req) :- coreunits(T) & min(T, 15, 15)
+    req(core-req-1) :- class(cs111, true, _)
+    req(core-req-2) :- class(cs161, true, _)
+
+    <!-- Core Unit Tracker -->
+    coreunits(T) :-
+    setofall([V, X], (class(X, true, V) & core_class(X)), S) &
+    map(first, S, L) &
+    sum(L, T)
+
+    innerhtml(totcoreunits, T) :- coreunits(T)
+    <!--first(X!Y, X)-->
+
+    <!-- Core Requirements Style Updates -->
+    style(core-req-1, color, red) :- ~req(core-req-1)
+    style(core-req-1, color, black) :- req(core-req-1)
+    style(core-req-2, color, red) :- ~req(core-req-2)
+    style(core-req-2, color, black) :- req(core-req-2)
+    style(core-unit-req, color, red) :- ~req(core-unit-req)
+    style(core-unit-req, color, black) :- req(core-unit-req)
+
+    <!-- Depth Requirements -->
+    req(depth-unit-req) :- depthunits(T) & min(T, 25, 25)
+    req(depth-req-1) :- class(cs221, true, _)
+
+    <!-- Depth Unit Tracker -->
+    depthunits(T) :-
+    setofall([V, X], (class(X, true, V) & depth_class(X)), S) &
+    map(first, S, L) &
+    sum(L, T)
+
+    innerhtml(totdepthunits, T) :- depthunits(T)
+    first(X!Y, X)
+
+    req(depth-classes-req) :- depthclasstotal(T) & min(T, 7, 7)
+    req(class-b-req) :-  bclasstotal(T) & min(T, 2, 2)
+    req(class-c-req) :-  cclasstotal(T) & min(T, 1, 1)
+    req(total_c_b) :- total_c_b(T) & min(T, 3, 3)
+    depthclasstotal(T) :- setofall([V, X], (class(X, true, V) & depth_class(X)), S) & length(S, T) 
+    bclasstotal(T) :- setofall([V, X], (class(X, true, V) & track_b(X)), S) & length(S, T) 
+    cclasstotal(T) :- setofall([V, X], (class(X, true, V) & (track_b(X) | track_c(X))), S) & length(S, T)
+    total_c_b(T) :- setofall([V, X], (class(X, true, V) & (track_b(X) | track_c(X) | elective_class(X))), S) & length(S, T)
+    <!-- Depth Requirements Style Updates -->
+    style(depth-req-1, color, red) :- ~req(depth-req-1)
+    style(depth-req-1, color, black) :- req(depth-req-1)
+    style(depth-unit-req, color, red) :- ~req(depth-unit-req)
+    style(depth-unit-req, color, black) :- req(depth-unit-req)
+    style(depth-classes-req, color, red) :- ~req(depth-classes-req)
+    style(depth-classes-req, color, black) :- req(depth-classes-req)
+    style(class-b-req, color, red) :- ~req(class-b-req)
+    style(class-b-req, color, black) :- req(class-b-req)
+    style(class-c-req, color, red) :- ~req(class-c-req)
+    style(class-c-req, color, black) :- req(class-c-req)
+    style(electives-req, color, red) :- ~req(total_c_b)
+    style(electives-req, color, black) :- req(total_c_b)
+</ruleset>
+</body>
+</html>
