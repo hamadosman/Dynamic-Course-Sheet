@@ -1,2 +1,2 @@
 # Dynamic-Course-Sheet
-This was an online sheet created using logic programming techniques and Javascript/HTML that keeps track of what classes students at Stanford are taking and their progress towards their degree. 
+This was an online sheet created using logic programming techniques and Javascript/HTML that keeps track of what classes students at Stanford are taking and their progress towards their degree. I was responsible for using logic programming and prolog to query the inputted information for each student into a database, and then using that information to deduce their progress towards their degree.
